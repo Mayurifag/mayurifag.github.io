@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic');
+body {
+  background: #2B282E;
+  color: #D3BDB0;
+  font-family: 'PT Mono', monospace;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+a {
+  border-bottom: 1px solid #B58863;
+  color: #B58863;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    opacity: .9;
+  }
+}
+
+p {
+  line-height: 1.65;
+  margin: 0 0 24px;
+}

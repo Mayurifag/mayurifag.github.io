@@ -1,0 +1,8 @@
+site: "mayurifag.github.io"
+host: "mayurifag.github.io"
+title: 'Vlad (@mayurifag)'
+description: '@mayurifag personal website with contact information. Fullstack Ruby on Rails web developer with some VueJS experience.'
+keywords: '@mayurifag, web, developer, software engineering, computer programming, web development, Ruby, Javascript, Ruby on Rails, Rails, Webpack, RSpec, SLIM, HAML, Git, SEO, Linux, HTML, CSS, SCSS'
+twitter_card: 'summary'
+twitter_author: '@mayurifag'
+customize_by_frontmatter: true
