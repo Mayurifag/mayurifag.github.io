@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic');
+
 body {
   background: #2B282E;
   color: #D3BDB0;
-  font-family: 'PT Mono', monospace;
+  font-family: 'PT Mono', 'Courier New', monospace;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   margin: 0;
@@ -13,6 +14,7 @@ a {
   color: #B58863;
   font-weight: bold;
   text-decoration: none;
+
   &:hover {
     opacity: .9;
   }
