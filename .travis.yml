@@ -2,12 +2,18 @@ language: ruby
 rvm:
 - 2.5.0
 cache: bundler
+addons:
+  apt:
+    packages:
+    - imagemagick
+
+
 branches:
   only:
   - source
+
 script:
-  - git config --global user.name 'Mayurifag'
-  - git config --global user.email 'farazeus@gmail.com'
+  - git config --global user.name 'Travis CI'
+  - git config --global user.email 'travis@travis-ci.org'
   - git remote set-url origin https://Mayurifag:${GH_TOKEN}@github.com/Mayurifag/mayurifag.github.io.git
-  - bundle exec middleman build
   - bundle exec middleman deploy
