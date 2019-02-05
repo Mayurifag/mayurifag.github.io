@@ -1,5 +1,35 @@
-@import './layout.css';
-@import './animations.css';
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic');
+
+$color-red: #e43222;
+$color-darkblue: #2b282e;
+$color-brown: #b58863;
+$color-lightbrown: #d3bdb0;
+
+body {
+  background: $color-darkblue;
+  color: $color-lightbrown;
+  font-family: 'PT Mono', 'Courier New', monospace;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+a {
+  border-bottom: 1px solid $color-brown;
+  color: $color-brown;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+p {
+  line-height: 1.65;
+  margin: 0 0 24px;
+}
+
 
 .main {
   margin: 50px 25px 0;
@@ -13,10 +43,24 @@
 }
 
 .console {
-  color: #e43222;
+  color: $color-red;
   font-weight: bold;
 
   &.blink {
     animation: 1.7s linear infinite condemned_blink_effect;
+  }
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
   }
 }

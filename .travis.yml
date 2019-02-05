@@ -7,7 +7,6 @@ addons:
     packages:
     - imagemagick
 
-
 branches:
   only:
   - source
