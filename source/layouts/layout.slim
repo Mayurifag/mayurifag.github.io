@@ -8,7 +8,13 @@ html lang="ru"
       content="width=device-width, initial-scale=1, shrink-to-fit=no")
     = partial 'layouts/favicons'
     = auto_display_meta_tags
+    / See site.js for information about font dirty hack
+    link (
+      as="fetch"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic"
+      rel="preload")
+    = javascript_include_tag 'site'
     = stylesheet_link_tag 'site'
-    / = javascript_include_tag "site"
   body
     = yield
