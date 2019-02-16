@@ -1,13 +1,8 @@
 doctype html
 html lang="ru"
   head
-    meta charset="utf-8"
-    meta http-equiv="x-ua-compatible" content="ie=edge"
-    meta(
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    = partial 'layouts/meta'
     = partial 'layouts/favicons'
-    = auto_display_meta_tags
     / See site.js for information about font dirty hack
     link (
       as="fetch"
