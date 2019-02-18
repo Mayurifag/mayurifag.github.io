@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: bundle exec middleman --bind-address 0.0.0.0
+    volumes:
+      - .:/mayurifag.github.io
+    ports:
+      - "4567:4567"
