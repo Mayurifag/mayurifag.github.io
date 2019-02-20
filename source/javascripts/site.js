@@ -2,7 +2,7 @@
 // Source: https://googlefonts.3perf.com
 !function() {
   var t = "https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic",
-      n = "__gFS";
+      n = "_";
 
   function e() {
       var e = document.createElement("link");

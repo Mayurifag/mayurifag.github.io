@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/Mayurifag/middleman-inliner.git
+  revision: e80c2a013686438910124807d4a30b400b363259
+  specs:
+    middleman-inliner (1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -139,6 +145,7 @@ DEPENDENCIES
   middleman-autoprefixer (~> 2.7)
   middleman-deploy (~> 2.0.0.pre.alpha)
   middleman-favicon-maker (~> 4.1)
+  middleman-inliner!
   middleman-livereload
   middleman-meta-tags
   middleman-minify-html
