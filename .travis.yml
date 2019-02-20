@@ -1,7 +1,10 @@
 language: ruby
+
 rvm:
 - 2.6.1
+
 cache: bundler
+
 addons:
   apt:
     packages:
@@ -10,6 +13,10 @@ addons:
 branches:
   only:
   - source
+
+# Temporary Travis has to install latest 2.x bundler
+before_install:
+  - gem install bundler
 
 script:
   - git config --global user.name 'Travis CI'
