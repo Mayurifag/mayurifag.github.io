@@ -54,3 +54,8 @@ activate :deploy do |deploy|
   deploy.branch        = 'master'
   deploy.build_before  = true
 end
+
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-141293812-1'
+  ga.minify = true
+end

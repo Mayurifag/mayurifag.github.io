@@ -10,6 +10,8 @@ html lang="ru"
       href="https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic"
       rel="preload")
     = stylesheet_inline_tag 'site'
-    = javascript_inline_tag 'site'
   body
     = yield
+  footer
+    = javascript_inline_tag 'site'
+    = google_analytics_tag
