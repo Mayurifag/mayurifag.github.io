@@ -14,7 +14,6 @@ RUN mkdir /$APP_NAME
 WORKDIR /$APP_NAME
 
 COPY Gemfile* ./
-RUN gem install bundler
 RUN bundle install
 
 COPY . /$APP_NAME
