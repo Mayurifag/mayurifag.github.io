@@ -16,8 +16,8 @@ branches:
 
 env:
   global:
-    - GH_COMMIT_AUTHOR="Travis CI"
-    - GH_COMMIT_EMAIL=your_email@example.com
+    - GH_COMMIT_AUTHOR='Travis CI'
+    - GH_COMMIT_EMAIL='travis@travis-ci.org'
 
 script:
   - bundle exec rake travis:script
