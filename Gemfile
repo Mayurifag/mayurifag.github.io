@@ -10,7 +10,7 @@ gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'middleman-favicon-maker', '~> 4.1'
 gem 'middleman-google-analytics', '~> 3.0'
-gem 'middleman-inliner', github: "Mayurifag/middleman-inliner"
+gem 'middleman-inliner', github: 'Mayurifag/middleman-inliner'
 gem 'middleman-livereload'
 gem 'middleman-meta-tags'
 gem 'middleman-minify-html'

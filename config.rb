@@ -8,10 +8,6 @@ activate :livereload
 activate :meta_tags
 activate :inliner
 
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
-
 configure :build do
   activate :minify_css, inline: true
   activate :minify_javascript, inline: true

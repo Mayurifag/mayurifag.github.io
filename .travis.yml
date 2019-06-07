@@ -14,12 +14,13 @@ branches:
   only:
   - source
 
-# Temporary Travis has to install latest 2.x bundler
-before_install:
-  - gem install bundler
+env:
+  global:
+    - GH_COMMIT_AUTHOR="Travis CI"
+    - GH_COMMIT_EMAIL=your_email@example.com
 
 script:
-  - git config --global user.name 'Travis CI'
-  - git config --global user.email 'travis@travis-ci.org'
-  - git remote set-url origin https://Mayurifag:${GH_TOKEN}@github.com/Mayurifag/mayurifag.github.io.git
-  - bundle exec middleman deploy
+  - bundle exec rake travis:script
+
+after_success:
+  - bundle exec rake travis:after_success
