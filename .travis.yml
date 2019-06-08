@@ -1,14 +1,15 @@
 language: ruby
 
 rvm:
-- 2.6.1
+  - 2.6
 
 cache: bundler
 
+# Imagemagick is required For favicon-maker
 addons:
   apt:
     packages:
-    - imagemagick
+      - imagemagick
 
 branches:
   only:
