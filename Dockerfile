@@ -1,12 +1,4 @@
-FROM ruby:2.6.1
-
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get install -qq -y nodejs
-
-RUN apt-get update -qq && \
-    apt-get install -y --no-install-recommends \
-                    build-essential && \
-    rm -rf /var/lib/apt/lists/*
+FROM ruby:2.6-alpine3.9
 
 ENV APP_NAME mayurifag.github.io
 
@@ -14,6 +6,10 @@ RUN mkdir /$APP_NAME
 WORKDIR /$APP_NAME
 
 COPY Gemfile* ./
-RUN bundle install
+
+RUN apk --no-cache add nodejs git \
+  && apk --no-cache add --virtual .eventmachine-builddeps g++ make \
+  && bundle install --without test development \
+  && apk del .eventmachine-builddeps
 
 COPY . /$APP_NAME
