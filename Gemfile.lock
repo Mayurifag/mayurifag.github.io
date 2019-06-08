@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/Mayurifag/middleman-inliner.git
+  remote: https://github.com/Mayurifag/middleman-inliner.git
   revision: e80c2a013686438910124807d4a30b400b363259
   specs:
     middleman-inliner (1.0.0)
