@@ -2,6 +2,8 @@
 
 source 'https://rubygems.org'
 
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
 # Default gems
 gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
