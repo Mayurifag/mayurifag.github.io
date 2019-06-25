@@ -10,6 +10,7 @@ COPY Gemfile* ./
 RUN apk --no-cache add nodejs git \
   && apk --no-cache add --virtual .eventmachine-builddeps g++ make \
   && bundle install --without test development \
-  && apk del .eventmachine-builddeps
+  && apk del .eventmachine-builddeps \
+  && bundle install
 
 COPY . /$APP_NAME

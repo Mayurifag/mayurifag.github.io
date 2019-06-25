@@ -25,7 +25,7 @@ development server.
 $ docker-compose up --build
 ```
 
-Development server has to be served at [localhost][middleman-server]
+Development server has to be served at [localhost][middleman-local-server]
 
 ### Built With
 * Ruby 2.6
@@ -44,4 +44,4 @@ Distributed under the WTFPL License. See `LICENSE.md` for more information.
 [codeclimate]: https://codeclimate.com/github/Mayurifag/mayurifag.github.io/maintainability
 [wtfpl-orignal]: https://github.com/rpherrera/WTFPL
 [travis]: https://travis-ci.org/Mayurifag/mayurifag.github.io
-[middleman-server]: http://lvh.me:4567
+[middleman-local-server]: http://lvh.me:4567
