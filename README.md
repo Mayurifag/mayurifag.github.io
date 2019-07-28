@@ -1,15 +1,16 @@
 [![Build Status][travis-badger]][travis]
 [![WTFPL License][license-badger]][wtfpl-orignal]
 [![Maintainability][maitainability-badger]][codeclimate]
+[![SSL Rating](https://sslbadge.org/?domain=me.mayurifag.ml)](https://www.ssllabs.com/ssltest/analyze.html?d=me.mayurifag.ml)
 
 <p align="center">
-  <a href="https://mayurifag.github.io">
+  <a href="https://me.mayurifag.ml">
     <img src="source/_favicon_template.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">
     <b>
-      <a href="https://mayurifag.github.io">Yet another personal website</a>
+      <a href="https://me.mayurifag.ml">Yet another personal website</a>
     </b>
   </h3>
 </p>
