@@ -2,6 +2,7 @@
 [![WTFPL License][license-badger]][wtfpl-orignal]
 [![Maintainability][maitainability-badger]][codeclimate]
 [![SSL Rating](https://sslbadge.org/?domain=me.mayurifag.ml)](https://www.ssllabs.com/ssltest/analyze.html?d=me.mayurifag.ml)
+![PageSpeed](https://api.speedbadge.io/v1?url=https://me.mayurifag.ml)
 
 <p align="center">
   <a href="https://me.mayurifag.ml">
