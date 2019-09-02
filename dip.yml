@@ -1,0 +1,31 @@
+version: '2'
+
+environment:
+  COMPOSE_EXT: development
+
+interaction:
+  sh:
+    service: web
+    command: sh
+    compose_run_options: [no-deps]
+
+  bundle:
+    service: web
+    command: bundle
+
+  rake:
+    service: web
+    command: bundle exec rake
+
+  rspec:
+    service: web
+    environment:
+      RAILS_ENV: test
+    command: bundle exec rspec
+
+  middleman:
+    service: web
+    command: bundle exec middleman
+
+provision:
+  - dip compose up --build

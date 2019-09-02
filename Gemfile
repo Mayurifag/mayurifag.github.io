@@ -22,5 +22,6 @@ gem 'slim', '>= 3.0'
 
 group :development do
   gem 'capybara'
+  gem 'rake'
   gem 'rspec'
 end

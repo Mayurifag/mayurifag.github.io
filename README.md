@@ -28,12 +28,14 @@ $ docker-compose up --build
 
 Development server has to be served at [localhost][middleman-local-server]
 
+There's a `dip` way to launch development server: `dip provision`.
+
 ### Built With
 * Ruby 2.6
 * Middleman (Ruby-based static website framework)
 * Docker
 
-Deploy via Travis CI
+Deploy via Travis CI, hosted on Github Pages.
 
 ## Automatic tests
 
@@ -43,6 +45,7 @@ To run test suite, you may use following command:
 docker-compose run web bundle exec rspec
 ```
 
+You may also use `dip rspec`.
 
 ## License
 
