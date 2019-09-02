@@ -7,7 +7,7 @@ WORKDIR /$APP_NAME
 
 COPY Gemfile* ./
 
-RUN apk --no-cache add nodejs git g++ make \
+RUN apk --no-cache add nodejs git g++ make imagemagick \
   && bundle install
 
 COPY . /$APP_NAME

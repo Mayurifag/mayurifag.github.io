@@ -5,5 +5,5 @@ description: "Mayurifag's personal website with contact information. Team Lead /
 keywords: 'Mayurifag, Vlad Ponomarev, Влад Пономарев, веб, веб разработка, web, developer, software engineering, computer programming, web development, Ruby, Javascript, Ruby on Rails, Rails, Webpack, RSpec, SLIM, HAML, Git, SEO, Linux, HTML, CSS, SCSS'
 twitter_card: 'summary'
 twitter_author: 'Vlad Ponomarev'
-pull_image: 'build/apple-touch-icon-180x180-precomposed.png'
+pull_image: 'images/main_icon.png'
 customize_by_frontmatter: true

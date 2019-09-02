@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://me.mayurifag.ml">
-    <img src="source/_favicon_template.png" alt="Logo" width="80" height="80">
+    <img src="source/images/main_icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">
