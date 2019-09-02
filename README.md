@@ -1,8 +1,7 @@
 [![Build Status][travis-badger]][travis]
 [![WTFPL License][license-badger]][wtfpl-orignal]
 [![Maintainability][maitainability-badger]][codeclimate]
-[![SSL Rating](https://sslbadge.org/?domain=me.mayurifag.ml)](https://www.ssllabs.com/ssltest/analyze.html?d=me.mayurifag.ml)
-![PageSpeed](https://api.speedbadge.io/v1?url=https://me.mayurifag.ml)
+[![SSL Rating][ssl-badger]][ssl-labs]
 
 <p align="center">
   <a href="https://me.mayurifag.ml">
@@ -43,7 +42,9 @@ Distributed under the WTFPL License. See `LICENSE.md` for more information.
 [travis-badger]: https://travis-ci.org/Mayurifag/mayurifag.github.io.svg?branch=source
 [license-badger]: https://img.shields.io/github/license/Mayurifag/mayurifag.github.io.svg?style=plastic
 [maitainability-badger]: https://api.codeclimate.com/v1/badges/3d4a4a856e67fc87790a/maintainability
+[ssl-badger]: https://sslbadge.org/?domain=me.mayurifag.ml
 [codeclimate]: https://codeclimate.com/github/Mayurifag/mayurifag.github.io/maintainability
 [wtfpl-orignal]: https://github.com/rpherrera/WTFPL
 [travis]: https://travis-ci.org/Mayurifag/mayurifag.github.io
+[ssl-labs]: https://www.ssllabs.com/ssltest/analyze.html?d=me.mayurifag.ml
 [middleman-local-server]: http://lvh.me:4567
