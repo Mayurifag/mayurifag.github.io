@@ -7,10 +7,7 @@ WORKDIR /$APP_NAME
 
 COPY Gemfile* ./
 
-RUN apk --no-cache add nodejs git \
-  && apk --no-cache add --virtual .eventmachine-builddeps g++ make \
-  && bundle install --without test development \
-  && apk del .eventmachine-builddeps \
+RUN apk --no-cache add nodejs git g++ make \
   && bundle install
 
 COPY . /$APP_NAME

@@ -19,3 +19,8 @@ gem 'middleman-minify-html'
 
 # Common gems
 gem 'slim', '>= 3.0'
+
+group :development do
+  gem 'capybara'
+  gem 'rspec'
+end

@@ -35,6 +35,15 @@ Development server has to be served at [localhost][middleman-local-server]
 
 Deploy via Travis CI
 
+## Automatic tests
+
+To run test suite, you may use following command:
+
+```shell
+docker-compose run web bundle exec rspec
+```
+
+
 ## License
 
 Distributed under the WTFPL License. See `LICENSE.md` for more information.

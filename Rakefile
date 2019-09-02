@@ -1,20 +1,25 @@
 # frozen_string_literal: true
 
-task default: %w[test]
+require 'rspec/core/rake_task'
 
-task :test do
+RSpec::Core::RakeTask.new(:spec)
+
+task default: %w[spec build]
+
+task :build do
   puts "\nBuilding project"
   try 'middleman build'
 end
 
 task :deploy do
-  puts "\nDeploying to GitHub"
+  puts "\nDeploying"
   try 'middleman deploy'
 end
 
 namespace :travis do
   task :script do
-    Rake::Task['test'].invoke
+    Rake::Task['spec'].invoke
+    Rake::Task['build'].invoke
   end
 
   task :after_success do
