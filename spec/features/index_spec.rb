@@ -1,11 +1,11 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
-describe 'index', type: :feature do
-  before do
-    visit '/'
-  end
+describe 'Main page', type: :feature do
+  before { visit '/' }
 
-  it 'responds successfully' do
+  it 'responds successfully [status 200]' do
     expect(page.status_code).to eql(200)
   end
 
