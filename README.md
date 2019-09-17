@@ -26,7 +26,7 @@ development server.
 $ docker-compose up --build
 ```
 
-Development server has to be served at [localhost][middleman-local-server]
+Development server has to be served at [localhost:4567][middleman-local-server]
 
 There's a `dip` way to launch development server: `dip provision`.
 

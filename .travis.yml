@@ -7,9 +7,7 @@ cache: bundler
 
 # Imagemagick is required For favicon-maker
 addons:
-  apt:
-    packages:
-      - imagemagick
+  - imagemagick
 
 branches:
   only:
