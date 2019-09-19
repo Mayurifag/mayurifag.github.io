@@ -24,4 +24,5 @@ group :development do
   gem 'capybara'
   gem 'rake'
   gem 'rspec'
+  gem 'rubocop'
 end

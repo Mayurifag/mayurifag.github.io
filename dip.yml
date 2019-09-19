@@ -13,6 +13,10 @@ interaction:
     service: web
     command: bundle
 
+  rubocop:
+    service: web
+    command: bundle exec rubocop
+
   rake:
     service: web
     command: bundle exec rake
