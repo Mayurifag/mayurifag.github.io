@@ -3,15 +3,9 @@ html lang="ru"
   head
     = partial 'layouts/meta'
     = partial 'layouts/favicons'
-    / See site.js for information about font dirty hack
-    link (
-      as="fetch"
-      crossorigin="anonymous"
-      href="https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic"
-      rel="preload")
-    = stylesheet_inline_tag 'site'
   body
     = yield
   footer
-    = javascript_inline_tag 'site'
+    = stylesheet_inline_tag 'site'
+    / = javascript_inline_tag 'site'
     = google_analytics_tag
