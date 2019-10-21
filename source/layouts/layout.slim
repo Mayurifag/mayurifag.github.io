@@ -1,11 +1,9 @@
 doctype html
-html lang="ru"
+html lang='ru'
   head
     = partial 'layouts/meta'
     = partial 'layouts/favicons'
+    = stylesheet_inline_tag 'site'
   body
     = yield
-  footer
-    = stylesheet_inline_tag 'site'
-    / = javascript_inline_tag 'site'
     = google_analytics_tag
