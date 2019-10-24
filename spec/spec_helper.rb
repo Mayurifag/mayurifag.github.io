@@ -10,7 +10,6 @@ require 'middleman-livereload'
 require 'middleman-meta-tags'
 require 'middleman-inliner'
 require 'middleman-deploy'
-require 'middleman-google-analytics'
 
 middleman_app = ::Middleman::Application.new do
   set :root, File.expand_path(File.join(File.dirname(__FILE__), '..'))
