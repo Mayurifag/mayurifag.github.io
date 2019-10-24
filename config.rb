@@ -16,6 +16,7 @@ configure :build do
   activate :asset_hash
   activate :gzip
 
+  # TODO: i dont need these things
   activate :favicon_maker, icons: {
     'images/main_icon.png' => [
       { icon: 'apple-touch-icon-180x180-precomposed.png' },

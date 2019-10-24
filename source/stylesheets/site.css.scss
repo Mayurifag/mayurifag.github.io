@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic&display=swap');
+
+@font-face {
+  font-family: 'PT Mono';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Mono'),
+       local('PTMono-Regular'),
+       url('fonts/pt.woff2') format('woff2'),
+       url('fonts/pt.woff') format('woff');
+}
 
 $color-brown: #b58863;
 $color-darkblue: #2b282e;

@@ -1,9 +1,8 @@
+# TODO: get rid of this
 # site: 'me.mayurifag.ml'
 host: 'https://me.mayurifag.ml/'
 title: "Mayurifag's personal website"
-description: "Mayurifag's personal website with contact information. Team Lead / Fullstack Ruby on Rails web developer with some VueJS experience."
-keywords: 'Mayurifag, Vlad Ponomarev, Влад Пономарев, веб, веб разработка, web, developer, software engineering, computer programming, web development, Ruby, Javascript, Ruby on Rails, Rails, Webpack, RSpec, SLIM, HAML, Git, SEO, Linux, HTML, CSS, SCSS'
-twitter_card: 'summary'
-twitter_author: 'Vlad Ponomarev'
+description: "Mayurifag's personal website. Team Lead / Ruby on Rails web developer"
+keywords: 'Mayurifag, веб, веб разработка, web, developer, software engineering, computer programming, web development, Ruby, Javascript, Ruby on Rails, Rails, Webpack, RSpec, SLIM, HAML, Git, SEO, Linux, HTML, CSS, SCSS'
 pull_image: 'images/main_icon.png'
 customize_by_frontmatter: true
