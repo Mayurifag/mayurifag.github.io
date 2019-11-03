@@ -47,6 +47,11 @@ docker-compose run web bundle exec rspec
 
 You may also use `dip rspec`.
 
+## Stylelint
+
+You may run `stylelint` if you have installed package-lock.json packages and
+run `stylelint "source/**/*.scss"`.
+
 ## License
 
 Distributed under the WTFPL License. See `LICENSE.md` for more information.

@@ -1,15 +1,3 @@
-// @import url('https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic&display=swap');
-
-@font-face {
-  font-family: 'PT Mono';
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Mono'),
-       local('PTMono-Regular'),
-       url('fonts/pt.woff') format('woff');
-}
-
 $color-brown: #b58863;
 $color-darkblue: #2b282e;
 $color-lightbrown: #d3bdb0;
@@ -24,6 +12,17 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: 'PT Mono';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('PT Mono'),
+    local('PTMono-Regular'),
+    url('fonts/pt.woff') format('woff');
+}
+
 a {
   border-bottom: 1px solid $color-brown;
   color: $color-brown;
@@ -31,7 +30,7 @@ a {
   text-decoration: none;
 
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
   }
 }
 
