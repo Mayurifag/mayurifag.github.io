@@ -17,6 +17,9 @@ gem 'middleman-meta-tags'
 gem 'middleman-minify-html'
 
 # Common gems
+## Using 2.0.8 due to error of Content-Length during build
+## More info: https://github.com/middleman/middleman/issues/2309
+gem 'rack', '~> 2.0.8'
 gem 'slim', '>= 3.0'
 
 group :development do

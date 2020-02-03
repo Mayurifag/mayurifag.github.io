@@ -1,4 +1,4 @@
-FROM ruby:2.6-alpine3.9
+FROM ruby:2.7-alpine
 
 ENV APP_NAME mayurifag.github.io
 

@@ -31,7 +31,7 @@ Development server has to be served at [localhost:4567][middleman-local-server]
 There's a `dip` way to launch development server: `dip provision`.
 
 ### Built With
-* Ruby 2.6
+* Ruby 2.7
 * Middleman (Ruby-based static website framework)
 * Docker
 
