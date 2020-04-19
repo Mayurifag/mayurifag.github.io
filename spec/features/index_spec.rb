@@ -13,7 +13,7 @@ describe 'Main page', type: :feature do
     expect(page).to have_text 'Vladislav Ponomarev'
   end
 
-  it 'has job position in text' do
-    expect(page).to have_text 'Team Lead'
-  end
+  # it 'has job position in text' do
+  #   expect(page).to have_text 'Team Lead'
+  # end
 end
