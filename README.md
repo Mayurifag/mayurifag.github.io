@@ -50,7 +50,7 @@ You may also use `dip rspec`.
 ## Stylelint
 
 You may run `stylelint` if you have installed package-lock.json packages and
-run `stylelint "source/**/*.scss"`.
+run `npx stylelint "source/**/*.scss"`.
 
 ## License
 
