@@ -4,13 +4,13 @@
 [![SSL Rating][ssl-badger]][ssl-labs]
 
 <p align="center">
-  <a href="https://me.mayurifag.ml">
+  <a href="https://mayurifag.ru">
     <img src="source/images/main_icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">
     <b>
-      <a href="https://me.mayurifag.ml">Yet another personal website</a>
+      <a href="https://mayurifag.ru">Yet another personal website</a>
     </b>
   </h3>
 </p>
@@ -59,9 +59,9 @@ Distributed under the WTFPL License. See `LICENSE.md` for more information.
 [travis-badger]: https://travis-ci.com/Mayurifag/mayurifag.github.io.svg?branch=source
 [license-badger]: https://img.shields.io/github/license/Mayurifag/mayurifag.github.io.svg?style=plastic
 [maitainability-badger]: https://api.codeclimate.com/v1/badges/3d4a4a856e67fc87790a/maintainability
-[ssl-badger]: https://sslbadge.org/?domain=me.mayurifag.ml
+[ssl-badger]: https://sslbadge.org/?domain=mayurifag.ru
 [codeclimate]: https://codeclimate.com/github/Mayurifag/mayurifag.github.io/maintainability
 [wtfpl-orignal]: https://github.com/rpherrera/WTFPL
 [travis]: https://travis-ci.com/Mayurifag/mayurifag.github.io
-[ssl-labs]: https://www.ssllabs.com/ssltest/analyze.html?d=me.mayurifag.ml
+[ssl-labs]: https://www.ssllabs.com/ssltest/analyze.html?d=mayurifag.ru
 [middleman-local-server]: http://lvh.me:4567
