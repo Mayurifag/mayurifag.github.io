@@ -1,0 +1,17 @@
+.cache
+.DS_Store
+.sass-cache
+build/
+.bundle
+node_modules
+
+.editorconfig
+.git/
+.gitignore
+.markdownlint.json
+.stylelintrc
+.tool-versions
+.travis.yml
+LICENSE.md
+README.md
+travis-deploy.sh

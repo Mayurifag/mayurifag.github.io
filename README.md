@@ -23,7 +23,7 @@ development server.
 2. Clone repo and execute:
 
 ```shell
-$ docker-compose up --build
+docker-compose up --build
 ```
 
 Development server has to be served at [localhost:4567][middleman-local-server]
@@ -31,6 +31,7 @@ Development server has to be served at [localhost:4567][middleman-local-server]
 There's a `dip` way to launch development server: `dip provision`.
 
 ### Built With
+
 * Ruby 2.7
 * Middleman (Ruby-based static website framework)
 * Docker
@@ -49,8 +50,8 @@ You may also use `dip rspec`.
 
 ## Stylelint
 
-You may run `stylelint` if you have installed package-lock.json packages and
-run `npx stylelint "source/**/*.scss"`.
+If you have installed package-lock.json packages you may check styles by
+running `npx stylelint "source/**/*.scss"`.
 
 ## License
 
