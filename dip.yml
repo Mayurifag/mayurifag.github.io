@@ -1,4 +1,5 @@
-version: '2'
+---
+version: '7.1'
 
 environment:
   COMPOSE_EXT: development
@@ -15,7 +16,7 @@ interaction:
 
   rubocop:
     service: web
-    command: bundle exec rubocop
+    command: bundle exec standardrb
 
   rake:
     service: web

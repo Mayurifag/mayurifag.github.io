@@ -32,7 +32,7 @@ There's a `dip` way to launch development server: `dip provision`.
 
 ### Built With
 
-* Ruby 2.7
+* Ruby 3.0
 * Middleman (Ruby-based static website framework)
 * Docker
 

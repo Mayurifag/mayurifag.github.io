@@ -5,7 +5,6 @@ activate :autoprefixer do |prefix|
 end
 
 activate :livereload
-activate :meta_tags
 activate :inliner
 
 configure :build do

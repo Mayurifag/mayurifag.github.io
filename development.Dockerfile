@@ -1,5 +1,5 @@
 # @see https://thelurkingvariable.com/2019/12/17/ruby-with-docker-compose-as-a-non-root-user/
-FROM ruby:2.7-alpine
+FROM ruby:3.0-alpine
 
 ARG APP_PATH=/mayurifag.github.io
 
@@ -8,14 +8,14 @@ ENV BUNDLE_PATH=/bundle \
     GEM_HOME=/bundle
 ENV PATH="${BUNDLE_BIN}:${PATH}"
 
-RUN mkdir $APP_PATH $BUNDLE_PATH \
+RUN mkdir -p $APP_PATH $BUNDLE_PATH \
   && apk add --update --no-cache \
     nodejs \
     git \
     g++ \
     make \
     imagemagick \
-  && gem install bundler -v 2.1.4 \
+  && gem install bundler -v 2.2.21 \
   ;
 
 COPY docker-entrypoint.sh /usr/bin

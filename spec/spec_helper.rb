@@ -7,7 +7,6 @@ require "middleman-core"
 require "middleman-core/rack"
 require "middleman-autoprefixer"
 require "middleman-livereload"
-require "middleman-meta-tags"
 require "middleman-inliner"
 require "middleman-deploy"
 

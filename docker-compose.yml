@@ -1,7 +1,9 @@
 version: '3'
 services:
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: development.Dockerfile
     volumes:
       - .:/mayurifag.github.io:cached
       - bundle:/bundle

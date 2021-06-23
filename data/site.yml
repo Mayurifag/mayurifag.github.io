@@ -1,8 +1,0 @@
-# TODO: get rid of this
-# site: 'mayurifag.ru'
-host: 'https://mayurifag.ru/'
-title: "Mayurifag's personal website"
-description: "Mayurifag's personal website. Ruby on Rails web developer"
-keywords: 'Mayurifag, веб, веб разработка, web, developer, software engineering, computer programming, web development, Ruby, Javascript, Ruby on Rails, Rails, Webpack, RSpec, SLIM, HAML, Git, SEO, Linux, HTML, CSS, SCSS'
-pull_image: 'images/main_icon.png'
-customize_by_frontmatter: true
