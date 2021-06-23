@@ -3,6 +3,7 @@ version: '7.1'
 
 environment:
   COMPOSE_EXT: development
+  DOCKER_BUILDKIT: 1
 
 interaction:
   sh:

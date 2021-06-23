@@ -53,6 +53,20 @@ You may also use `dip rspec`.
 If you have installed package-lock.json packages you may check styles by
 running `npx stylelint "source/**/*.scss"`.
 
+## Production image
+
+Build production image tagged `latest`:
+
+```shell
+DOCKER_BUILDKIT=1 docker build . -f production.Dockerfile -t mayurifag/mayurifag.github.io:latest
+```
+
+Run latest production image (open `localhost:8000` on your browser):
+
+```shell
+docker run --rm -it -p 8000:8005 --init mayurifag/mayurifag.github.io:latest
+```
+
 ## License
 
 Distributed under the WTFPL License. See `LICENSE.md` for more information.

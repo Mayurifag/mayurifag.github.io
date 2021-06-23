@@ -1,25 +1,28 @@
 language: ruby
 
 rvm:
-  - 3.0
-
+  - 3.0.1
 cache: bundler
 
-# Imagemagick is required For favicon-maker
 addons:
   - imagemagick
+services:
+  - docker
 
 branches:
   only:
-  - source
+    - source
 
 env:
   global:
     - GH_COMMIT_AUTHOR='Travis CI'
     - GH_COMMIT_EMAIL='travis@travis-ci.org'
-
+    - secure: 29CkW5BTMc2XBj9MSVTB3DcKvygSywkIcXBdD9gnB67aW0VgeDllH9K5dTFOzYbDjP8LabGjUsdS/U1CPB3TU8sDwJGkC7G5WBx4FqMhlCD/jfROFyv8KmbzE61+b6wUR3p41HpE0GPDeZODYsT8+WeprHSBg94KJdeEfivH81215nhNE8uGb866D0wIXeHwZ3NmbZWfDmc/Sr5tlMNUsxekTM2YD8PEs5fVAjL5UvfBBuLra5PnOK6rmy8tsktiawMOMu9+TsT/lVE61T9mftO9EE/3PAHvyBCBg2NjdEZ02sh712RfjxdDNT2y/sfoNH23hm0gakF9KC3rsP99QDDqBUdtUuJfkajNrTwob1xtOoym1OUx56aLAyC6GunY3vh3bBEvm3JcQ0JM7Sbb/2OMI96gIK4UHk7XL4I9pheTYY7FgKc6SNSxwtyMnEODFVSx6LJWjcJgwWlPoElA3Of/fs92x2XhGzxwQgdFVNkWH3XYG7JTwVizRXBHbLfWpHNq0LB4kqRiGquTEs81vCDoPH5fR3GUzpMy4/4Ba2k9WIvKxsYStBVaXjXqkdWhqGbr0k9Q3ByHkJnuch9b5E7bti6qYCgplIv3hF8UGleaCf6k+fQSSuZn0jBnWWGjL6qwGz2bnU9B2REepno7Txo4S0OuiVBTucoZdwEPGsw=
+    - secure: dlGVECxYgkxprrrzeuW2ATOKR2d9bgsLSmNeamEEKCpKbe6ghbzFXYn58QYZsWSgyLBtrH7MUxike5vb20pRkVaNrY67iPJEJ90/zAr8Pe+3eq8qp6+tnmADlFIac/hFPWkFrkZlqCJYTI/4wH+NKlMhQckdbkUblDGYvSab1NbBjHbDpH4nASIbkPHqX+bIls9nVXjM7t2gytIB8oOmY0j0n9cVK1MINulKMPbz5UFjBxgf0n3vfUXt2Ucx2ZZu4iO4yEqJiPfr0FGU97812nSmpRyF1TdOrouQtLnpCUB+cObQTgiA8il2G5BgqDD3UAYKG0bmdsv0F0/c6pHAvVKgXCGGA4bT6PH6d2RfG0fYPB1JS23q/hcXOc2Y+Bu8eNx9tzR/g0iFojgpESNBIsUVkEeLkcqZ69UADvigXeVZzwEDjZYJkDpFGpsUR00cyLKKUPUxcVtcs4YadSG3jGwzVUBr0RHIjQSFiXkKApF7/wEiYOtDbnWmNtsaPOytw+jZPtZ9aKHHUBzbNmzJBvmRVxZwBPDjP6FMr49SbgPtPchcnKCpMjfc7tllMCmqzWhmF2cWmgalBBXK7uRkmk2rMYDmYOrdka7fQd1hJ6Ig/iSRTTCSJP4p3pvnKuoy8zh3N342BE7QO66GXdtkjC4cvGaCex3ea3n6wyManLM=
 script:
   - bundle exec rake travis:script
-
 after_success:
   - bundle exec rake travis:after_success
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - DOCKER_BUILDKIT=1 docker build . -f production.Dockerfile -t mayurifag/mayurifag.github.io:latest
+  - docker push mayurifag/mayurifag.github.io:latest

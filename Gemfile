@@ -7,7 +7,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # Default gems
 # gem "middleman", github: "middleman/middleman", branch: "4.x"
 gem "middleman"
-gem "middleman-autoprefixer", "~> 2.7"
+gem "middleman-autoprefixer"
 
 # Middleman extensions
 gem "middleman-deploy", "~> 2.0.0.pre.alpha"
