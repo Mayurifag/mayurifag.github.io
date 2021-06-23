@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "mayurifag-github-io-chart.fullname" . }}
+  labels:
+    {{- include "mayurifag-github-io-chart.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "mayurifag-github-io-chart.selectorLabels" . | nindent 4 }}
