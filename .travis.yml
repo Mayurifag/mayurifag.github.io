@@ -23,6 +23,6 @@ script:
   - bundle exec rake travis:script
 after_success:
   - bundle exec rake travis:after_success
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - DOCKER_BUILDKIT=1 docker build . -f production.Dockerfile -t mayurifag/mayurifag.github.io:latest
+  - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
+  - docker build . -f production.Dockerfile -t mayurifag/mayurifag.github.io:latest
   - docker push mayurifag/mayurifag.github.io:latest
