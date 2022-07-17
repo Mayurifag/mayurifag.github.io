@@ -15,6 +15,7 @@ gem "middleman-favicon-maker"
 gem "middleman-inliner", github: "Mayurifag/middleman-inliner"
 gem "middleman-livereload"
 gem "middleman-minify-html"
+gem "net-ftp"
 
 # Common gems
 gem "slim", ">= 3.0"

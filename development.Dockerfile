@@ -7,6 +7,10 @@ ENV BUNDLE_PATH=/bundle \
     GEM_HOME=/bundle
 ENV PATH="${BUNDLE_BIN}:${PATH}"
 
+WORKDIR $APP_PATH
+
+COPY Gemfile Gemfile.lock ${APP_DIR}
+
 RUN mkdir -p $APP_PATH $BUNDLE_PATH \
   && apk add --update --no-cache \
     nodejs \
@@ -14,17 +18,10 @@ RUN mkdir -p $APP_PATH $BUNDLE_PATH \
     g++ \
     make \
     imagemagick \
-  && gem install bundler -v 2.2.21 \
+  && gem install --no-document \
+    bundler:"$(tail -n 1 Gemfile.lock)" \
+  && bundle install -j $(nproc) \
   ;
-
-WORKDIR $APP_PATH
-
-COPY Gemfile* $APP_PATH/
-
-RUN bundle install -j $(nproc)
-
-COPY . $APP_PATH/
-
 
 COPY docker-entrypoint.sh /usr/bin
 RUN chmod +x /usr/bin/docker-entrypoint.sh

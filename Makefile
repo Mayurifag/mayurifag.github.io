@@ -3,10 +3,10 @@ ARGS = $(filter-out $@,$(MAKECMDGOALS))
 %:
 	@:
 
-# include ./makefiles/*.mk
+include ./makefiles/*.mk
 
 build:
-	docker build .
+	docker-compose build
 
 up:
 	docker-compose up --detach
