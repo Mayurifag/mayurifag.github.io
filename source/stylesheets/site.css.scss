@@ -3,12 +3,15 @@ $color-darkblue: #2b282e;
 $color-lightbrown: #d3bdb0;
 $color-red: #e43222;
 
-body {
+html {
   background: $color-darkblue;
   color: $color-lightbrown;
   font-family: 'PT Mono', 'Fira Code', 'Courier New', monospace;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
+}
+
+body {
   margin: 0;
 }
 

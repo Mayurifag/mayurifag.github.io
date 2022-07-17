@@ -8,7 +8,8 @@ services:
       - .:/mayurifag.github.io:cached
       - bundle:/bundle
     ports:
-      - "4567:4567"
+      - "4567:4567" # middleman server
+      - "35729:35729" # livereload
 
 volumes:
   bundle:
