@@ -1,6 +1,7 @@
 rspec:
 	docker-compose run --rm web rspec $(ARGS)
 
+.PHONY: middleman
 middleman:
 	docker-compose run --rm web middleman $(ARGS)
 

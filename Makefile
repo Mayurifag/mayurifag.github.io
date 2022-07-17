@@ -5,10 +5,9 @@ ARGS = $(filter-out $@,$(MAKECMDGOALS))
 
 include ./makefiles/*.mk
 
-build:
-	docker-compose build
 
 up:
+	docker-compose build
 	docker-compose up --detach
 
 down:
@@ -20,8 +19,7 @@ down-all:
 restart:
 	docker-compose restart $(ARGS)
 
-reprovision: down-all build up
-
+reprovision: down up
 
 # -> make log [SERVICE] (i.e. make log app)
 .PHONY: log

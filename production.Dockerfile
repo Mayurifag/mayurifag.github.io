@@ -1,21 +1,21 @@
-FROM ruby:3.1-alpine AS common
+FROM ruby:3.1-alpine
 
 ARG APP_PATH=/mayurifag.github.io
 
 ENV BUNDLE_PATH=/bundle \
     BUNDLE_BIN=/bundle/bin \
-    GEM_HOME=/bundle \
-    NODE_ENV=production
+    GEM_HOME=/bundle
 ENV PATH="${BUNDLE_BIN}:${PATH}"
 
 WORKDIR $APP_PATH
+
+COPY Gemfile Gemfile.lock package-lock.json package.json ${APP_DIR}
 
 COPY --from=node:14-alpine /usr/lib /usr/lib
 COPY --from=node:14-alpine /usr/local/share /usr/local/share
 COPY --from=node:14-alpine /usr/local/lib /usr/local/lib
 COPY --from=node:14-alpine /usr/local/include /usr/local/include
 COPY --from=node:14-alpine /usr/local/bin /usr/local/bin
-COPY Gemfile Gemfile.lock package-lock.json package.json ${APP_DIR}
 
 RUN mkdir -p $BUNDLE_PATH \
   && node --version \
