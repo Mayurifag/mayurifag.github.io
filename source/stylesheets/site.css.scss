@@ -6,7 +6,7 @@ $color-red: #e43222;
 html {
   background: $color-darkblue;
   color: $color-lightbrown;
-  font-family: 'PT Mono', 'Fira Code', 'Courier New', monospace;
+  font-family: "PT Mono", "Fira Code", "Courier New", monospace;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
 }
@@ -16,14 +16,14 @@ body {
 }
 
 @font-face {
-  font-family: 'PT Mono';
+  font-family: "PT Mono";
   font-display: swap;
   font-style: normal;
   font-weight: 400;
   src:
-    local('PT Mono'),
-    local('PTMono-Regular'),
-    url('fonts/pt.woff') format('woff');
+    local("PT Mono"),
+    local("PTMono-Regular"),
+    url("fonts/pt.woff") format("woff");
 }
 
 a {
@@ -58,11 +58,11 @@ p {
   font-weight: bold;
 
   &.blink {
-    animation: 1.7s linear infinite condemned_blink_effect;
+    animation: 1.7s linear infinite condemnedBlinkEffect;
   }
 }
 
-@keyframes condemned_blink_effect {
+@keyframes condemnedBlinkEffect {
   0% {
     visibility: hidden;
   }

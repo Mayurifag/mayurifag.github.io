@@ -19,3 +19,9 @@ rubocop:
 
 rweb:
 	docker-compose restart web
+
+npm:
+	docker-compose run --rm web npm $(ARGS)
+
+stylelint:
+	docker-compose run --rm web npx stylelint --fix "source/**/*.scss"

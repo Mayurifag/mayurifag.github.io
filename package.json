@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "stylelint": "^13.3.2",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0"
   },
   "name": "mayurifag.github.io"
 }
