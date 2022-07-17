@@ -5,9 +5,11 @@ ARGS = $(filter-out $@,$(MAKECMDGOALS))
 
 include ./makefiles/*.mk
 
-
-up:
+.PHONY: build
+build:
 	docker-compose build
+
+up: build
 	docker-compose up --detach
 
 down:
