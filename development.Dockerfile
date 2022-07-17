@@ -11,10 +11,16 @@ WORKDIR $APP_PATH
 
 COPY Gemfile Gemfile.lock package-lock.json package.json ${APP_DIR}
 
+COPY --from=node:14-alpine /usr/lib /usr/lib
+COPY --from=node:14-alpine /usr/local/share /usr/local/share
+COPY --from=node:14-alpine /usr/local/lib /usr/local/lib
+COPY --from=node:14-alpine /usr/local/include /usr/local/include
+COPY --from=node:14-alpine /usr/local/bin /usr/local/bin
+
 RUN mkdir -p $APP_PATH $BUNDLE_PATH \
+  && node --version \
+  && npm --version \
   && apk add --update --no-cache \
-    nodejs \
-    npm \
     git \
     g++ \
     make \
