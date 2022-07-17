@@ -1,4 +1,4 @@
-FROM ruby:3.0-alpine AS common
+FROM ruby:3.1-alpine AS common
 
 ARG APP_PATH=/mayurifag.github.io
 
