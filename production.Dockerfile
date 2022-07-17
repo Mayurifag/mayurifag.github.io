@@ -9,11 +9,12 @@ ENV PATH="${BUNDLE_BIN}:${PATH}"
 
 WORKDIR $APP_PATH
 
-COPY Gemfile Gemfile.lock ${APP_DIR}
+COPY Gemfile Gemfile.lock package-lock.json package.json ${APP_DIR}
 
 RUN mkdir -p $BUNDLE_PATH \
   && apk add --update --no-cache \
     nodejs \
+    npm \
     git \
     g++ \
     make \
@@ -21,6 +22,7 @@ RUN mkdir -p $BUNDLE_PATH \
   && gem install --no-document \
     bundler:"$(tail -n 1 Gemfile.lock)" \
   && bundle install -j $(nproc) \
+  && npm install \
   ;
 
 RUN bundle exec middleman build
