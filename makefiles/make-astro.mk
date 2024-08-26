@@ -1,6 +1,6 @@
-ASTRO = bunx --bun astro
-.PHONY: astro dev build preview
+.PHONY: astro dev build preview install remove
 
+ASTRO = bunx --bun astro
 astro:
 	@$(ASTRO) $(ARGS)
 
@@ -12,3 +12,9 @@ build:
 
 preview: build
 	@$(ASTRO) preview
+
+install:
+	@bun install $(ARGS)
+
+remove:
+	@bun remove $(ARGS)
