@@ -3,5 +3,45 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Vlad's personal website">
-	<h1>Ghost Mode</h1>
+	<main class="main">
+		<p>Hi! 👋 I'm Vlad, language-agnostic software developer.</p>
+
+		<p>
+      I might join your team if you need high-quality code to be written and deployed fast.
+    </p>
+
+    <p>
+      Here will be links to my CV, LinkedIn, GitHub, email and contact details. Eventually.
+    </p>
+
+		<p>
+			<span class="console">&gt;</span><b> Vlad Ponomarev</b>
+			<span class="console blink"> _</span>
+		</p>
+	</main>
 </Layout>
+
+<style>
+	.console {
+		color: var(--color-red);
+		font-weight: bold;
+	}
+
+	.console.blink {
+		animation: 1s linear infinite condemnedBlinkEffect;
+	}
+
+	@keyframes condemnedBlinkEffect {
+		0% {
+			visibility: hidden;
+		}
+
+		50% {
+			visibility: hidden;
+		}
+
+		100% {
+			visibility: visible;
+		}
+	}
+</style>

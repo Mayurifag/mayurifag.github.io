@@ -21,29 +21,52 @@ import { Seo } from "astro-seo-meta"
 			icon="favicon.ico"
 		/>
 		<title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=PT+Mono&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%20%21%22%23%24%25%26%27%28%29%2A%2B%2C-.%2F%3A%3B%3C%3D%3E%3F%40%5B%5C%5D%5E_%60%7B%7C%7D~%F0%9F%91%8B&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
-<style>
+
+<style is:global>
 	:root {
-		--bg-color: #121212;
-		--text-color: #ffffff;
-	}
-	body {
-		background-color: var(--bg-color);
-		color: var(--text-color);
-		font-family: system-ui, sans-serif;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-		margin: 0;
+		--color-brown: #b58863;
+		--color-darkblue: #2b282e;
+		--color-lightbrown: #d3bdb0;
+		--color-red: #e43222;
 	}
 
-	h1 {
-		font-size: clamp(2rem, 10vw, 6rem);
-		text-align: center;
+	body {
+		background: var(--color-darkblue);
+		color: var(--color-lightbrown);
+		font-family: 'PT Mono', monospace;
+		font-size: 17px;
+		-webkit-font-smoothing: antialiased;
+		margin: 50px 25px 0;
+		max-width: 500px;
+	}
+
+	@media (min-width: 601px) {
+		body {
+			margin: 50px;
+		}
+	}
+
+	a {
+		border-bottom: 1px solid var(--color-brown);
+		color: var(--color-brown);
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	a:hover {
+		opacity: 0.9;
+	}
+
+	p {
+		line-height: 1.65;
+		margin: 0 0 24px;
 	}
 </style>

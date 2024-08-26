@@ -11,4 +11,4 @@ trim_trailing_whitespace = true
 indent_style = unset
 
 [bun.lockb]
-# This file is ignored
+end_of_line = unset
