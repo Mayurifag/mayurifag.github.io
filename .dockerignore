@@ -11,7 +11,5 @@ node_modules
 .markdownlint.json
 .stylelintrc
 .tool-versions
-.travis.yml
 LICENSE.md
 README.md
-travis-deploy.sh
