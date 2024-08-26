@@ -1,7 +1,22 @@
 {
-  "devDependencies": {
-    "stylelint": "^14.9.1",
-    "stylelint-config-standard": "^26.0.0"
+  "name": "mayurifag.github.io",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "name": "mayurifag.github.io"
+  "dependencies": {
+    "@astrojs/check": "^0.9.3",
+    "@astrojs/sitemap": "^3.1.6",
+    "astro": "^4.14.5",
+    "astro-compress": "^2.3.1",
+    "astro-purgecss": "^4.4.1",
+    "astro-seo-meta": "^4.1.1",
+    "purgecss": "^6.0.0",
+    "typescript": "^5.5.4"
+  }
 }

@@ -1,5 +1,15 @@
 {
   "no-inline-html": {
-    "allowed_elements": [ "b", "p", "a", "h3", "img" ]
-  }
+    "allowed_elements": [
+      "b",
+      "p",
+      "a",
+      "h3",
+      "img"
+    ],
+    "ignore": [
+      "LICENSE.md"
+    ]
+  },
+  "first-line-h1": false
 }
