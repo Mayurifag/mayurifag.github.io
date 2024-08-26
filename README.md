@@ -23,7 +23,15 @@ bun install
 make dev
 ```
 
-I didn't make docker enviroment here, there is no special need for it.
+I didn't make docker dev enviroment here, there is no special need for it.
+
+## Build and run production docker image
+
+Make sure you have `docker` installed.
+
+```sh
+make docker-run
+```
 
 ## How project was built
 
