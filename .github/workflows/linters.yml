@@ -5,7 +5,6 @@ name: Linters pipeline
   push:
     branches:
       - source
-      - astro-js
   pull_request:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
