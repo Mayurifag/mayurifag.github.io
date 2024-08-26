@@ -14,14 +14,22 @@
   </h3>
 </p>
 
-## Getting Started
+## Launch development environment
 
-- Make sure you have `bun` installed.
+Make sure you have `bun` installed.
+
+```sh
+bun install
+make dev
+```
+
+I didn't make docker enviroment here, there is no special need for it.
 
 ## How project was built
 
-I've decided to start from scratch using Astro.js and Bun. I've also used
-github actions and github pages.
+There was Middleman project before, which you may check with
+`latest-middleman-release` tag. I've decided to start from scratch using
+Astro.js and Bun. I've also used github actions and github pages.
 
 Cheatsheet:
 
