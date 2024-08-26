@@ -1,6 +1,4 @@
 [![WTFPL License][license-badger]][wtfpl-orignal]
-[![Maintainability][maitainability-badger]][codeclimate]
-[![SSL Rating][ssl-badger]][ssl-labs]
 
 <p align="center">
   <a href="https://mayurifag.ru">
@@ -52,8 +50,4 @@ bunx --bun astro telemetry disable
 Distributed under the WTFPL License. See `LICENSE.md` for more information.
 
 [license-badger]: https://img.shields.io/github/license/Mayurifag/mayurifag.github.io.svg?style=plastic
-[maitainability-badger]: https://api.codeclimate.com/v1/badges/3d4a4a856e67fc87790a/maintainability
-[ssl-badger]: https://sslbadge.org/?domain=mayurifag.ru
-[codeclimate]: https://codeclimate.com/github/Mayurifag/mayurifag.github.io/maintainability
 [wtfpl-orignal]: https://github.com/rpherrera/WTFPL
-[ssl-labs]: https://www.ssllabs.com/ssltest/analyze.html?d=mayurifag.ru
