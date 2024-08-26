@@ -4,8 +4,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-
-import { Seo } from "astro-seo-meta"
 ---
 
 <!doctype html>
@@ -15,12 +13,8 @@ import { Seo } from "astro-seo-meta"
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
-		<Seo
-			title="mayurifag.ru"
-			description="Software developer, personal website"
-			icon="/favicon.svg"
-		/>
 		<title>{title}</title>
+	</head>
 	<body>
 		<slot />
 	</body>
@@ -34,7 +28,7 @@ import { Seo } from "astro-seo-meta"
 		--color-red: #e43222;
 	}
 
-	body {
+	html {
 		background: var(--color-darkblue);
 		color: var(--color-lightbrown);
 		font-family: 'PT Mono', 'Courier New', 'Fira Code', monospace;
@@ -45,7 +39,7 @@ import { Seo } from "astro-seo-meta"
 	}
 
 	@media (min-width: 601px) {
-		body {
+		html {
 			margin: 50px;
 		}
 	}
