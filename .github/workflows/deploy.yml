@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload your site output
         uses: withastro/action@v2
-  deploy:
+  deploy-gh-pages:
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -30,3 +30,25 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+  deploy-dockerhub:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: |
+            mayurifag/mayurifag.github.io:latest
+            mayurifag/mayurifag.github.io:${{ github.sha }}
