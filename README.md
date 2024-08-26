@@ -3,9 +3,9 @@
 [![SSL Rating][ssl-badger]][ssl-labs]
 
 <p align="center">
-  <!-- <a href="https://mayurifag.ru">
-    <img src="source/images/main_icon.png" alt="Logo" width="80" height="80">
-  </a> -->
+  <a href="https://mayurifag.ru">
+    <img src="public/favicon.svg" alt="Logo" width="80" height="80">
+  </a>
 
   <h3 align="center">
     <b>
@@ -16,18 +16,19 @@
 
 ## Getting Started
 
-1. Make sure you have docker installed.
-
+- Make sure you have `bun` installed.
 
 ## How project was built
 
 I've decided to start from scratch using Astro.js and Bun. I've also used
-docker, github actions and github pages.
+github actions and github pages.
 
 Cheatsheet:
 
 ```sh
 bunx create-astro@latest mayurifag.github.io
+cd mayurifag.github.io
+bunx --bun astro telemetry disable
 ```
 
 ## License
