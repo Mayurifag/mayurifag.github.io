@@ -1,0 +1,17 @@
+{
+  "files.associations": {
+    "*.astro": "astro"
+  },
+  "files.exclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/public/**": true,
+    "**/build/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/public": true,
+    "**/build": true
+  }
+}

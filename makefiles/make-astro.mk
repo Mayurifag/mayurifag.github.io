@@ -1,4 +1,4 @@
-.PHONY: astro dev build preview install remove
+.PHONY: astro dev build preview install remove update-deps
 
 ASTRO = bunx --bun astro
 astro:
@@ -18,3 +18,6 @@ install:
 
 remove:
 	@bun remove $(ARGS)
+
+update-deps:
+	@bun update --latest

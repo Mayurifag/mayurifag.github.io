@@ -1,34 +1,33 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Vlad's personal website">
+<Layout title="‎ ">
 	<main class="main">
-		<p>Hi there! 👋 I'm Vlad, language-agnostic software developer with positive mental attitude! 👨‍💻</p>
+		<p>Hey there 👋</p>
+
+		<p>This is domain I use to host services. 😇</p>
 
 		<p>
-      Do you need high quality code to be written and deployed fast? Let's connect and discuss how can I contribute to your team!
-    </p>
-
-    <p>
-      Here will be links to my CV, LinkedIn, GitHub, email and contact details. Eventually. 🙂
-    </p>
+			I've decided to remove any contact details to lock in my projects. You
+			probably don't have enough budget to work with me anyway. 😁
+		</p>
 
 		<p>
-			<span class="console">&gt;</span><b> Vlad Ponomarev</b>
+			<span class="console">&gt;</span><b> Vladislav Ponomarev</b>
 			<span class="console blink"> _</span>
 		</p>
 	</main>
 </Layout>
 
-<style>
+<style lang="scss">
 	.console {
 		color: var(--color-red);
 		font-weight: bold;
-	}
 
-	.console.blink {
-		animation: 1.7s linear infinite condemnedBlinkEffect;
+		&.blink {
+			animation: 1.7s linear infinite condemnedBlinkEffect;
+		}
 	}
 
 	@keyframes condemnedBlinkEffect {

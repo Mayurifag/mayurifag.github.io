@@ -20,7 +20,7 @@ const { title } = Astro.props;
 	</body>
 </html>
 
-<style is:global>
+<style is:global lang="scss">
 	:root {
 		--color-brown: #b58863;
 		--color-darkblue: #2b282e;
@@ -31,15 +31,13 @@ const { title } = Astro.props;
 	html {
 		background: var(--color-darkblue);
 		color: var(--color-lightbrown);
-		font-family: 'PT Mono', 'Courier New', 'Fira Code', monospace;
+		font-family: "PT Mono", "Courier New", "Fira Code", monospace;
 		font-size: 17px;
 		-webkit-font-smoothing: antialiased;
 		margin: 50px 25px 0;
 		max-width: 500px;
-	}
 
-	@media (min-width: 601px) {
-		html {
+		@media (min-width: 601px) {
 			margin: 50px;
 		}
 	}
@@ -49,10 +47,10 @@ const { title } = Astro.props;
 		color: var(--color-brown);
 		font-weight: bold;
 		text-decoration: none;
-	}
 
-	a:hover {
-		opacity: 0.9;
+		&:hover {
+			opacity: 0.9;
+		}
 	}
 
 	p {
