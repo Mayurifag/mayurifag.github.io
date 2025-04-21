@@ -7,8 +7,10 @@ RUN bunx --bun astro telemetry disable \
   && bunx --bun astro build \
   ;
 
-FROM nginx:1.27-alpine
-COPY --from=build /app/dist /usr/share/nginx/html
+FROM caddy:2.9.1-alpine
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+COPY --from=build /app/dist /usr/share/caddy
+RUN chown -R appuser:appgroup /usr/share/caddy
+USER appuser
 EXPOSE 80
-USER nginx
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["caddy", "file-server", "--root", "/usr/share/caddy"]
