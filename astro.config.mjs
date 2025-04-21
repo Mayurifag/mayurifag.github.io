@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import purgecss from 'astro-purgecss';
 import compress from 'astro-compress';
+import * as sass from 'sass';
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,4 +12,13 @@ export default defineConfig({
     purgecss(),
     sitemap(),
   ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          implementation: sass
+        }
+      }
+    }
+  }
 })
