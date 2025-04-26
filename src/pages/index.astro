@@ -3,44 +3,22 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="‎ ">
-	<main class="main">
-		<p>Hey there 👋</p>
+	<p>Hey there 👋</p>
 
-		<p>This is domain I use to host services. 😇</p>
+	<p>
+		This domain is used for web <a
+			href="https://github.com/Mayurifag/mayurifag.ru?tab=readme-ov-file#applications-list"
+			>services</a
+		>.
+	</p>
 
-		<p>
-			I've decided to remove any contact details to lock in my projects. You
-			probably don't have enough budget to work with me anyway. 😁
-		</p>
+	<p>
+		I've decided to remove contacts, — you probably don't have enough budget to
+		hire me anyway. 😁
+	</p>
 
-		<p>
-			<span class="console">&gt;</span><b> Vladislav Ponomarev</b>
-			<span class="console blink"> _</span>
-		</p>
-	</main>
+	<p>
+		<span class="console">&gt;</span><b> Vladislav Ponomarev</b>
+		<span class="console blink"> _</span>
+	</p>
 </Layout>
-
-<style lang="scss">
-	.console {
-		color: var(--color-red);
-		font-weight: bold;
-
-		&.blink {
-			animation: 1.7s linear infinite condemnedBlinkEffect;
-		}
-	}
-
-	@keyframes condemnedBlinkEffect {
-		0% {
-			visibility: hidden;
-		}
-
-		50% {
-			visibility: hidden;
-		}
-
-		100% {
-			visibility: visible;
-		}
-	}
-</style>
