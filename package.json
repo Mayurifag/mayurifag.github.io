@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint:scss": "stylelint \"src/**/*.scss\"",
+    "lint:scss:fix": "stylelint \"src/**/*.scss\" --fix"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -20,6 +22,8 @@
     "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.52.0"
+    "@playwright/test": "^1.52.0",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard-scss": "^14.0.0"
   }
 }

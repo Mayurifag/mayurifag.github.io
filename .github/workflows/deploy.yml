@@ -48,6 +48,8 @@ jobs:
         with:
           path: ~/.cache/ms-playwright
           key: ${{ runner.os }}-playwright-${{ hashFiles('**/bun.lockb') }}
+      - name: bun run lint:scss
+        run: bun run lint:scss
       - name: Install Playwright browsers
         run: bunx playwright install --with-deps
       - name: Run tests

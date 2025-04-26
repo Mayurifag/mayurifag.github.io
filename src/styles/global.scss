@@ -7,13 +7,13 @@
 html {
   background: var(--color-darkblue);
   color: var(--color-lightbrown);
-  font-family: "PT Mono", "Fira Code", "Courier New", monospace;
+  font-family: 'PT Mono', monospace;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   margin: 50px 25px;
   max-width: 500px;
 
-  @media (min-width: 601px) {
+  @media (width >=601px) {
     margin: 50px;
   }
 }
@@ -40,11 +40,11 @@ p {
   font-weight: bold;
 
   &.blink {
-    animation: 1.7s linear infinite condemnedBlinkEffect;
+    animation: 1.7s linear infinite condemned-blink-effect;
   }
 }
 
-@keyframes condemnedBlinkEffect {
+@keyframes condemned-blink-effect {
   0% {
     visibility: hidden;
   }
