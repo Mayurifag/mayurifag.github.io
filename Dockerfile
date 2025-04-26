@@ -7,7 +7,7 @@ RUN bunx --bun astro telemetry disable \
   && bunx --bun astro build \
   ;
 
-FROM caddy:2.9.1-alpine
+FROM caddy:2.10-alpine
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 COPY --from=build /app/dist /usr/share/caddy
 RUN chown -R appuser:appgroup /usr/share/caddy
