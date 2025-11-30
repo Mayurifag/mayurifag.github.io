@@ -8,9 +8,10 @@ RUN bunx --bun astro telemetry disable \
   ;
 
 FROM caddy:2.10-alpine
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+# RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 COPY --from=build /app/dist /usr/share/caddy
-RUN chown -R appuser:appgroup /usr/share/caddy
-USER appuser
+# RUN mkdir -p /data /config
+# RUN chown -R appuser:appgroup /usr/share/caddy /data /config
+# USER appuser
 EXPOSE 80
 CMD ["caddy", "file-server", "--root", "/usr/share/caddy"]
