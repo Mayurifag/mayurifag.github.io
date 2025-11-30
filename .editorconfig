@@ -13,3 +13,4 @@ indent_style = unset
 [bun.lockb]
 end_of_line = unset
 trim_trailing_whitespace = unset
+charset = unset
