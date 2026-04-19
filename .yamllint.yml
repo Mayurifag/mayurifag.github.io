@@ -9,3 +9,5 @@ ignore: |
 rules:
   line-length:
     max: 120
+  comments:
+    min-spaces-from-content: 1
