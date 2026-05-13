@@ -66,6 +66,9 @@ jobs:
   deploy-dockerhub:
     needs: test-e2e
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@ce360397dd3f832beb865e1373c09c0e9f86d70a # v4.0.0
@@ -76,6 +79,12 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@4907a6ddec9925e35a0a9e82d7399ccc52663121 # v4.1.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Build and push
@@ -85,6 +94,8 @@ jobs:
           tags: |
             mayurifag/mayurifag.github.io:latest
             mayurifag/mayurifag.github.io:${{ github.sha }}
+            ghcr.io/mayurifag/mayurifag.github.io:latest
+            ghcr.io/mayurifag/mayurifag.github.io:${{ github.sha }}
       - name: Trigger deploy
         uses: Mayurifag/multiple-watchtowers-update-action@master
         with:
