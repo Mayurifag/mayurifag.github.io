@@ -97,7 +97,7 @@ jobs:
             ghcr.io/mayurifag/mayurifag.github.io:latest
             ghcr.io/mayurifag/mayurifag.github.io:${{ github.sha }}
       - name: Trigger deploy
-        uses: Mayurifag/multiple-watchtowers-update-action@master
+        uses: Mayurifag/multiple-watchtowers-update-action@6a98d6c7f807abecc82a358bb69978157077fee4
         with:
           watchtower-urls: ${{ secrets.WATCHTOWER_URLS }}
           watchtower-tokens: ${{ secrets.WATCHTOWER_TOKENS }}
