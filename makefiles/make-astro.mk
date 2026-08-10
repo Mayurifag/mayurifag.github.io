@@ -8,7 +8,7 @@ dev:
 	@$(ASTRO) dev
 
 build:
-	@$(ASTRO) build
+	@bun run build
 
 preview: build
 	@$(ASTRO) preview
@@ -23,7 +23,7 @@ update-deps:
 	@bun update --latest
 
 test: build
-	@bunx playwright test
+	@bun run test:e2e
 
 clean:
 	rm -rf dist/ .astro/

@@ -1,7 +1,7 @@
 :root {
   --color-darkblue: #2b282e;
   --color-lightbrown: #d3bdb0;
-  --color-red: #e43222;
+  --color-red: #ff6b5e;
 }
 
 html {
@@ -41,6 +41,12 @@ p {
 
   &.blink {
     animation: 1.7s linear infinite condemned-blink-effect;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .console.blink {
+    display: none;
   }
 }
 

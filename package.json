@@ -8,22 +8,20 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "test:e2e": "playwright test",
     "lint:scss": "stylelint \"src/**/*.scss\"",
     "lint:scss:fix": "stylelint \"src/**/*.scss\" --fix"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/sitemap": "^3.3.0",
-    "astro": "^5.7.4",
-    "astro-compress": "^2.3.8",
-    "astro-purgecss": "^5.2.2",
-    "purgecss": "^7.0.2",
-    "sass": "^1.86.3",
-    "typescript": "^5.8.3"
+    "@astrojs/check": "^0.9.10",
+    "astro": "^7.2.0",
+    "astro-compress": "^2.4.3",
+    "sass": "^1.102.0",
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@playwright/test": "^1.52.0",
-    "stylelint": "^16.19.1",
-    "stylelint-config-standard-scss": "^14.0.0"
+    "@playwright/test": "^1.62.1",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard-scss": "^17.0.0"
   }
 }

@@ -1,10 +1,10 @@
 FROM oven/bun:1 AS build
 WORKDIR /app
-COPY package*.json ./
+COPY package.json bun.lock ./
 RUN bun install --frozen-lockfile
 COPY . .
 RUN bunx --bun astro telemetry disable \
-  && bunx --bun astro build \
+  && bun run build \
   ;
 
 FROM caddy:2.10-alpine
